@@ -1,9 +1,13 @@
-function App() {
+import Nav from './components/nav';
+import Home from './pages/home';
+
+const App = () => {
   return (
     <div className='App'>
-      <h1>Good to go!!</h1>
+      <Nav />
+      <Home />
     </div>
   );
-}
+};
 
 export default App;
