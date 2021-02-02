@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='bg-gray-900 px-2 pt-10'>
+      <div className='bg-gray-800 px-2 pt-10'>
         <div className='container mx-auto'>
           <h1 className='max-w-lg mx-auto tracking-wide font-semibold text-gray-300 text-center border-t-2 border-gray-300 pt-4'>
             My recent works
@@ -37,7 +37,7 @@ const Home = () => {
           <p className='text-center text-4xl text-white mb-20 pt-1 uppercase tracking-wider font-semibold'>
             Portfolio
           </p>
-          <div className='bg-gray-800 rounded-tl-full rounded-br-full'>
+          <div className='bg-gray-700 rounded-tl-full rounded-br-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-6 text-white'>
                 <img
@@ -99,9 +99,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='bg-gray-900 px-2'>
+      <div className='bg-gray-800 px-2'>
         <div className='container mx-auto pt-16'>
-          <div className='bg-gray-800 rounded-tr-full rounded-bl-full'>
+          <div className='bg-gray-700 rounded-tr-full rounded-bl-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-4 text-white grid justify-items-end'>
                 <h1 className='text-3xl font-semibold tracking-wide pb-5 mt-8'>
@@ -164,9 +164,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='bg-gray-900 px-2'>
+      <div className='bg-gray-800 px-2'>
         <div className='container mx-auto pt-16'>
-          <div className='bg-gray-800 rounded-tl-full rounded-br-full'>
+          <div className='bg-gray-700 rounded-tl-full rounded-br-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-6 text-white'>
                 <img
@@ -220,7 +220,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='bg-gray-900 px-2'>
+      <div className='bg-gray-800 px-2 pb-10'>
         <div className='container mx-auto pt-10'>
           <div className='w-full text-center'>
             <button className='py-2 px-6 text-lg border border-white rounded text-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out uppercase'>
