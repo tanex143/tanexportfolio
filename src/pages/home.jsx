@@ -1,6 +1,8 @@
 import vectorImg from '../images/Blogging-bro.svg';
 import shoesECommerce from '../images/shoes-e-commerce.jpg';
 import tmdbMovies from '../images/tmdb-movies.jpg';
+import youtubeConverter from '../images/youtube-converter.jpg';
+import Services from './../components/services';
 
 const Home = () => {
   return (
@@ -9,7 +11,7 @@ const Home = () => {
         <div className='container mx-auto'>
           <div className='grid grid-cols-10'>
             <div className='col-start-1 col-span-4 text-white my-64'>
-              <h1 className='text-5xl pb-5'>Hey, I'm Tanex.</h1>
+              <h1 className='text-5xl pb-5'>Hello, I'm Tanex.</h1>
               <p className='pb-8'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, libero. Dignissimos, doloremque maxime? Harum sit
@@ -17,22 +19,25 @@ const Home = () => {
                 temporibus sequi unde odit? Sed, repellendus.
               </p>
 
-              <button className='py-3 px-8 bg-gray-200 text-lg rounded text-black font-semibold focus:outline-none'>
-                My Projects
+              <button className='py-3 px-8 border border-white text-lg rounded hover:text-black font-semibold focus:outline-none hover:bg-white transition-all duration-500 ease-in-out'>
+                My Portfolio
               </button>
             </div>
             <div className='col-start-5 col-span-6'>
-              <img src={vectorImg} alt='img' />
+              <img src={vectorImg} alt='img' className='-mt-10' />
             </div>
           </div>
         </div>
       </div>
-      <div className='bg-gray-900 px-2'>
+      <div className='bg-gray-900 px-2 pt-10'>
         <div className='container mx-auto'>
-          <h1 className='uppercase tracking-wide font-semibold text-white text-3xl border-b-2 border-gray-300 pb-4 mb-20'>
-            recent projects
+          <h1 className='max-w-lg mx-auto tracking-wide font-semibold text-gray-300 text-center border-t-2 border-gray-300 pt-4'>
+            My recent works
           </h1>
-          <div className='bg-gray-800'>
+          <p className='text-center text-4xl text-white mb-20 pt-1 uppercase tracking-wider font-semibold'>
+            Portfolio
+          </p>
+          <div className='bg-gray-800 rounded-tl-full rounded-br-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-6 text-white'>
                 <img
@@ -84,8 +89,8 @@ const Home = () => {
                   </a>
                 </div>
                 <div>
-                  <button className='py-2 px-5 bg-gray-300 text-lg text-black rounded font-semibold uppercase tracking-wide'>
-                    view site
+                  <button className='py-2 px-6 border border-white text-white rounded tracking-wide hover:bg-white hover:text-black transition-all duration-500 ease-in-out'>
+                    View Site
                   </button>
                 </div>
               </div>
@@ -96,7 +101,7 @@ const Home = () => {
 
       <div className='bg-gray-900 px-2'>
         <div className='container mx-auto pt-16'>
-          <div className='bg-gray-800'>
+          <div className='bg-gray-800 rounded-tr-full rounded-bl-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-4 text-white grid justify-items-end'>
                 <h1 className='text-3xl font-semibold tracking-wide pb-5 mt-8'>
@@ -146,8 +151,8 @@ const Home = () => {
                   </a>
                 </div>
                 <div>
-                  <button className='py-2 px-5 bg-gray-300 text-lg text-black rounded font-semibold uppercase tracking-wide'>
-                    view site
+                  <button className='py-2 px-6 border border-white text-white rounded tracking-wide hover:bg-white hover:text-black transition-all duration-500 ease-in-out'>
+                    View Site
                   </button>
                 </div>
               </div>
@@ -161,34 +166,32 @@ const Home = () => {
 
       <div className='bg-gray-900 px-2'>
         <div className='container mx-auto pt-16'>
-          <div className='bg-gray-800'>
+          <div className='bg-gray-800 rounded-tl-full rounded-br-full'>
             <div className='grid grid-cols-10 gap-10 py-16 px-8'>
               <div className='col-start-1 col-span-6 text-white'>
                 <img
-                  src={shoesECommerce}
+                  src={youtubeConverter}
                   alt='img'
                   className='w-full rounded'
                 />
               </div>
               <div className='col-start-7 col-span-4 text-white'>
                 <h1 className='text-3xl font-semibold tracking-wide pb-5 mt-8'>
-                  Nike Shoes E-commerce
+                  Youtube Converter
                 </h1>
                 <p>
-                  A simple responsive e-commerce website with the use of Context
-                  Hook of React JS. A dynamic website that has simple validation
-                  to create and login user, item add to cart, delete per item,
-                  delete all item in cart and checkout function with the use of
-                  react-paypal-express-checkout. I just assume that all items
-                  has only 1 stock.
+                  A simple responsive youtube converter using yt-download API.
+                  You will just copy the youtube URL and paste here and it will
+                  automatically convert to MP3 and MP4. You can also choose what
+                  to download.
                 </p>
                 <div className='flex gap-4 pt-5'>
                   <p>Github Source:</p>
                   <a
-                    href='https://github.com/tanex143/shoes-e-commerce'
+                    href='https://github.com/tanex143/youtube-converter'
                     className='text-white hover:text-blue-500'
                   >
-                    Shoes E-commerce
+                    Youtube Converter
                   </a>
                 </div>
                 <div className='flex gap-5 pb-10'>
@@ -200,12 +203,6 @@ const Home = () => {
                     React JS
                   </a>
                   <a
-                    href='https://ant.design/'
-                    className='text-white hover:text-blue-500'
-                  >
-                    Ant Design
-                  </a>
-                  <a
                     href='https://tailwindcss.com/'
                     className='text-white hover:text-blue-500'
                   >
@@ -213,8 +210,8 @@ const Home = () => {
                   </a>
                 </div>
                 <div>
-                  <button className='py-2 px-5 bg-gray-300 text-lg text-black rounded font-semibold uppercase tracking-wide'>
-                    view site
+                  <button className='py-2 px-6 border border-white text-white rounded tracking-wide hover:bg-white hover:text-black transition-all duration-500 ease-in-out'>
+                    View Site
                   </button>
                 </div>
               </div>
@@ -222,6 +219,17 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className='bg-gray-900 px-2'>
+        <div className='container mx-auto pt-10'>
+          <div className='w-full text-center'>
+            <button className='py-2 px-6 text-lg border border-white rounded text-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out uppercase'>
+              view all projects
+            </button>
+          </div>
+        </div>
+      </div>
+      <Services />
     </>
   );
 };

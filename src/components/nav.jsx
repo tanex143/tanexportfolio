@@ -13,9 +13,8 @@ const Nav = () => {
           </div>
           <div className='flex gap-20 uppercase tracking-wide text-lg my-auto'>
             <p>Home</p>
-            <p>Projects</p>
+            <p>Portfolio</p>
             <p>About Me</p>
-            <p>Contact</p>
           </div>
         </div>
       </div>
