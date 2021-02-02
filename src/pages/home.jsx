@@ -3,6 +3,7 @@ import shoesECommerce from '../images/shoes-e-commerce.jpg';
 import tmdbMovies from '../images/tmdb-movies.jpg';
 import youtubeConverter from '../images/youtube-converter.jpg';
 import Services from './../components/services';
+import Contact from './../components/contact';
 
 const Home = () => {
   return (
@@ -230,6 +231,7 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <Contact />
     </>
   );
 };
