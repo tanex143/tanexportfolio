@@ -5,11 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import './assets/main.css';
 import './assets/custom.css';
+import Context from './context';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Context>
+        <App />
+      </Context>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

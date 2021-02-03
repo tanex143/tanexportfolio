@@ -9,12 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
   return (
-    <div className='bg-gray-800 py-20'>
+    <div className='bg-gray-700 py-20'>
       <div className='container mx-auto'>
-        <h1 className='pt-5 border-t-2 font-semibold border-gray-300 text-gray-300 max-w-lg mx-auto text-center tracking-wide'>
+        <h1 className='pt-5 border-t-2 font-semibold border-violet-400 text-white max-w-lg mx-auto text-center tracking-wide'>
           Get in touch
         </h1>
-        <p className='uppercase text-center text-4xl font-semibold text-white tracking-wider'>
+        <p className='uppercase text-center text-4xl font-semibold text-violet-500 tracking-wider'>
           Contact Me
         </p>
 
@@ -24,14 +24,14 @@ const Contact = () => {
               <FontAwesomeIcon icon={faUserAlt} className='text-2xl my-auto' />
               <div className='py-2'>
                 <p className='text-gray-300'>Name</p>
-                <p className='text-lg'>Reynaldo D. Tan Jr.</p>
+                <p className='text-lg text-violet-400'>Reynaldo D. Tan Jr.</p>
               </div>
             </div>
             <div className='flex gap-4'>
               <FontAwesomeIcon icon={faPhoneAlt} className='text-2xl my-auto' />
               <div className='py-2'>
                 <p className='text-gray-300'>Contact</p>
-                <p className='text-lg'>(+63)975-721-1645</p>
+                <p className='text-lg text-violet-400'>(+63)975-721-1645</p>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ const Contact = () => {
               />
               <div className='py-2'>
                 <p className='text-gray-300'>Address</p>
-                <p className='text-lg'>
+                <p className='text-lg text-violet-400'>
                   Zone 3 Puerto, Cagayan de Oro City, Misamis Oriental
                 </p>
               </div>
@@ -52,7 +52,9 @@ const Contact = () => {
               <FontAwesomeIcon icon={faEnvelope} className='text-2xl my-auto' />
               <div className='py-2'>
                 <p className='text-gray-300'>Email</p>
-                <p className='text-lg'>reynaldojrtan29@gmail.com</p>
+                <p className='text-lg text-violet-400'>
+                  reynaldojrtan29@gmail.com
+                </p>
               </div>
             </div>
             <div className='flex gap-4'>
@@ -64,7 +66,7 @@ const Contact = () => {
                 <p className='text-gray-300'>Facebook</p>
                 <a
                   href='https://www.facebook.com/reynaldojrtan'
-                  className='text-white text-lg hover:text-lightblue-500'
+                  className='text-violet-400 text-lg hover:text-lightblue-500'
                 >
                   Tanex Junior
                 </a>
@@ -79,15 +81,17 @@ const Contact = () => {
                 <p className='text-gray-300'>LinkedIn</p>
                 <a
                   href='https://www.linkedin.com/in/reynaldo-tan-jr-9ab103166/'
-                  className='text-white text-lg hover:text-lightblue-500'
+                  className='text-violet-400 text-lg hover:text-lightblue-500'
                 >
                   Reynaldo Tan Jr.
                 </a>
               </div>
             </div>
           </div>
-          <div className='mt-12 pt-4 px-4 rounded text-white bg-gray-700'>
-            <h1 className='text-2xl pb-5'>Message Me</h1>
+          <div className='mt-12 py-8 px-10 rounded text-white bg-gray-600 border border-violet-400'>
+            <h1 className='text-2xl pb-5'>
+              Message <span className='text-violet-500'>Me</span>
+            </h1>
             <form method='post' name='contact' data-netlify='true'>
               <input type='hidden' name='form-name' value='contact' />
               <div className='grid grid-cols-2 gap-4'>
@@ -124,10 +128,10 @@ const Contact = () => {
                   className='w-full indent-10 text-black  focus:outline-none py-2'
                 />
               </div>
-              <div className='w-full pb-5'>
+              <div className='w-full'>
                 <button
                   type='submit'
-                  className='py-2 px-5 border border-white text-white hover:text-black hover:bg-white w-full transition-all duration-500 ease-in-out'
+                  className='py-2 px-5 border border-violet-500 text-white hover:bg-violet-500 w-full transition-all duration-500 ease-in-out'
                 >
                   Send
                 </button>
