@@ -64,7 +64,7 @@ const Contact = () => {
                 <p className='text-gray-300'>Facebook</p>
                 <a
                   href='https://www.facebook.com/reynaldojrtan'
-                  className='text-white text-lg'
+                  className='text-white text-lg hover:text-lightblue-500'
                 >
                   Tanex Junior
                 </a>
@@ -77,7 +77,10 @@ const Contact = () => {
               />
               <div className='py-2'>
                 <p className='text-gray-300'>LinkedIn</p>
-                <a href='https://www.linkedin.com/in/reynaldo-tan-jr-9ab103166/'>
+                <a
+                  href='https://www.linkedin.com/in/reynaldo-tan-jr-9ab103166/'
+                  className='text-white text-lg hover:text-lightblue-500'
+                >
                   Reynaldo Tan Jr.
                 </a>
               </div>
@@ -85,15 +88,17 @@ const Contact = () => {
           </div>
           <div className='mt-12 pt-4 px-4 rounded text-white bg-gray-700'>
             <h1 className='text-2xl pb-5'>Message Me</h1>
-            <form>
+            <form method='POST' name='contact' data-netlify='true'>
               <div className='grid grid-cols-2 gap-4'>
                 <input
                   type='text'
+                  name='name'
                   placeholder='Name*'
                   className='py-2  text-black indent-10 focus:outline-none'
                 />
                 <input
                   type='email'
+                  name='email'
                   placeholder='Email*'
                   className='py-2  text-black indent-10 focus:outline-none'
                 />
@@ -101,6 +106,7 @@ const Contact = () => {
               <div className='w-full py-4'>
                 <input
                   type='text'
+                  name='subject'
                   placeholder='Subject*'
                   className='w-full py-2 text-black indent-10  focus:outline-none'
                 />
@@ -109,6 +115,7 @@ const Contact = () => {
                 <textarea
                   cols='30'
                   rows='6'
+                  name='message'
                   placeholder='Message'
                   className='w-full indent-10 text-black  focus:outline-none py-2'
                 />
