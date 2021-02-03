@@ -127,7 +127,10 @@ const Contact = () => {
                 />
               </div>
               <div className='w-full pb-5'>
-                <button className='py-2 px-5 border border-white text-white hover:text-black hover:bg-white w-full transition-all duration-500 ease-in-out'>
+                <button
+                  type='submit'
+                  className='py-2 px-5 border border-white text-white hover:text-black hover:bg-white w-full transition-all duration-500 ease-in-out'
+                >
                   Submit
                 </button>
               </div>
