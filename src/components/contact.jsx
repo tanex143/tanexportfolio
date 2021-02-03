@@ -88,7 +88,13 @@ const Contact = () => {
           </div>
           <div className='mt-12 pt-4 px-4 rounded text-white bg-gray-700'>
             <h1 className='text-2xl pb-5'>Message Me</h1>
-            <form method='POST' name='contact' data-netlify='true'>
+            <form
+              method='post'
+              name='contact'
+              data-netlify='true'
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input type='hidden' name='form-name' value='contact' />
               <div className='grid grid-cols-2 gap-4'>
                 <input
                   type='text'
