@@ -1,12 +1,25 @@
 import Nav from './components/nav';
+import { Route, Switch } from 'react-router-dom';
 import Home from './pages/home';
+import Portfolio from './pages/portfolio';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='App'>
+    <>
       <Nav />
-      <Home />
-    </div>
+
+      <Switch>
+        <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/portfolio' exact>
+          <Portfolio />
+        </Route>
+      </Switch>
+
+      <Footer />
+    </>
   );
 };
 

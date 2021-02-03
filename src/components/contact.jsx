@@ -38,7 +38,7 @@ const Contact = () => {
             <div className='flex gap-4'>
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
-                className='text-2xl my-auto'
+                className='text-2xl my-auto mr-1'
               />
               <div className='py-2'>
                 <p className='text-gray-300'>Address</p>
@@ -58,7 +58,7 @@ const Contact = () => {
             <div className='flex gap-4'>
               <FontAwesomeIcon
                 icon={faFacebookF}
-                className='text-2xl my-auto'
+                className='text-2xl my-auto mr-1'
               />
               <div className='py-2'>
                 <p className='text-gray-300'>Facebook</p>
@@ -88,7 +88,7 @@ const Contact = () => {
           </div>
           <div className='mt-12 pt-4 px-4 rounded text-white bg-gray-700'>
             <h1 className='text-2xl pb-5'>Message Me</h1>
-            <form method='post' name='contact' netlify>
+            <form method='post' name='contact' data-netlify='true'>
               <input type='hidden' name='form-name' value='contact' />
               <div className='grid grid-cols-2 gap-4'>
                 <input
@@ -96,12 +96,14 @@ const Contact = () => {
                   name='name'
                   placeholder='Name*'
                   className='py-2  text-black indent-10 focus:outline-none'
+                  required
                 />
                 <input
                   type='email'
                   name='email'
                   placeholder='Email*'
                   className='py-2  text-black indent-10 focus:outline-none'
+                  required
                 />
               </div>
               <div className='w-full py-4'>
@@ -110,6 +112,7 @@ const Contact = () => {
                   name='subject'
                   placeholder='Subject*'
                   className='w-full py-2 text-black indent-10  focus:outline-none'
+                  required
                 />
               </div>
               <div className='w-full pb-4'>
@@ -126,7 +129,7 @@ const Contact = () => {
                   type='submit'
                   className='py-2 px-5 border border-white text-white hover:text-black hover:bg-white w-full transition-all duration-500 ease-in-out'
                 >
-                  Submit
+                  Send
                 </button>
               </div>
             </form>

@@ -4,7 +4,7 @@ import tmdbMovies from '../images/tmdb-movies.jpg';
 import youtubeConverter from '../images/youtube-converter.jpg';
 import Services from './../components/services';
 import Contact from './../components/contact';
-import Footer from './../components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -14,16 +14,19 @@ const Home = () => {
           <div className='grid grid-cols-10'>
             <div className='col-start-1 col-span-4 text-white my-64'>
               <h1 className='text-5xl pb-5'>Hello, I'm Tanex.</h1>
-              <p className='pb-8'>
+              <p className='pb-10'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, libero. Dignissimos, doloremque maxime? Harum sit
                 illum eaque praesentium repudiandae quia omnis ab soluta! At
                 temporibus sequi unde odit? Sed, repellendus.
               </p>
 
-              <button className='py-3 px-8 border border-white text-lg rounded hover:text-black font-semibold focus:outline-none hover:bg-white transition-all duration-500 ease-in-out'>
+              <Link
+                to='/portfolio'
+                className='py-3 px-8 border border-white text-lg rounded hover:text-black font-semibold focus:outline-none hover:bg-white transition-all duration-500 ease-in-out'
+              >
                 My Portfolio
-              </button>
+              </Link>
             </div>
             <div className='col-start-5 col-span-6'>
               <img src={vectorImg} alt='img' className='-mt-10' />
@@ -225,15 +228,17 @@ const Home = () => {
       <div className='bg-gray-800 px-2 pb-10'>
         <div className='container mx-auto pt-10'>
           <div className='w-full text-center'>
-            <button className='py-2 px-6 text-lg border border-white rounded text-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out uppercase'>
+            <Link
+              to='/portfolio'
+              className='py-2 px-6 text-lg border border-white rounded text-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out uppercase'
+            >
               view all projects
-            </button>
+            </Link>
           </div>
         </div>
       </div>
       <Services />
       <Contact />
-      <Footer />
     </>
   );
 };
