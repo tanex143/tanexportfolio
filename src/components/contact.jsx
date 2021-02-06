@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
           </div>
           <div className='mt-12 py-8 px-10 rounded text-white bg-gray-600 border border-violet-400'>
-            <h1 className='text-2xl pb-5'>
+            <h1 className='text-2xl pb-5 text-white'>
               Message <span className='text-violet-500'>Me</span>
             </h1>
             <form method='post' name='contact' data-netlify='true'>

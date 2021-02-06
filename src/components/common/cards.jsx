@@ -16,8 +16,12 @@ const Cards = ({ projectData }) => {
                     <div className='absolute top-0 left-0 mt-8 ml-8 bg-violet-400 w-full h-full rounded shadow-xl'></div>
                   </div>
                   <div className='col-start-7 col-span-4 text-white ml-2'>
-                    <h1 className='text-3xl text-violet-400 font-semibold tracking-wide pb-5'>
+                    <h1 className='text-3xl text-violet-400 font-semibold tracking-wide'>
                       {project.project_name}
+                    </h1>
+                    <h1 className='text-white pb-5'>
+                      {project.date} &mdash;
+                      <span className='-ml-0.5'>&mdash;</span>
                     </h1>
                     <p className=''>{project.description}</p>
                     <div className='flex gap-4 pt-5'>
@@ -45,9 +49,14 @@ const Cards = ({ projectData }) => {
                       ))}
                     </div>
                     <div>
-                      <button className='py-2 px-6 border border-violet-500 text-white rounded tracking-wide hover:bg-violet-500 transition-all duration-500 ease-in-out'>
+                      <a
+                        href={project.site_link}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='py-2 px-6 border border-violet-500 text-white hover:text-white rounded tracking-wide hover:bg-violet-500 transition-all duration-500 ease-in-out'
+                      >
                         View Site
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -58,8 +67,13 @@ const Cards = ({ projectData }) => {
                   <div className='bg-gray-600 rounded-tr-full border border-violet-400'>
                     <div className='grid grid-cols-10 gap-10 py-16 px-8'>
                       <div className='col-start-1 col-span-4 text-white grid justify-items-end mr-2'>
-                        <h1 className='text-3xl text-violet-400 font-semibold tracking-wide pb-5 mt-8'>
+                        <h1 className='text-3xl text-violet-400 font-semibold tracking-wide mt-8'>
                           {project.project_name}
+                        </h1>
+                        <h1 className='text-white pb-5'>
+                          &mdash;
+                          <span className='-ml-0.5'>&mdash;</span>{' '}
+                          {project.date}
                         </h1>
                         <p className='text-right'>{project.description}</p>
                         <div className='flex gap-4 pt-5'>
@@ -87,9 +101,14 @@ const Cards = ({ projectData }) => {
                         </div>
 
                         <div>
-                          <button className='py-2 px-6 border border-violet-500 text-white rounded tracking-wide hover:bg-violet-500 transition-all duration-500 ease-in-out'>
+                          <a
+                            href={project.site_link}
+                            target='_blank'
+                            rel='noreferrer'
+                            className='py-2 px-6 border border-violet-500 text-white hover:text-white rounded tracking-wide hover:bg-violet-500 transition-all duration-500 ease-in-out'
+                          >
                             View Site
-                          </button>
+                          </a>
                         </div>
                       </div>
                       <div className='col-start-5 col-span-6 text-white relative'>

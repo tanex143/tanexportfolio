@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import 'antd/dist/antd.css';
 import './assets/main.css';
 import './assets/custom.css';
+import { BrowserRouter } from 'react-router-dom';
 import Context from './context';
 
 ReactDOM.render(
