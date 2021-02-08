@@ -20,51 +20,55 @@ const Home = () => {
 
   return (
     <>
-      <div className='bg-gray-800 h-91vh px-2'>
+      <div className='bg-gray-800 h-91vh px-2 -mt-0.5'>
         <div className='container mx-auto'>
-          <div className='grid grid-cols-10'>
-            <div className='col-start-1 col-span-4 text-white my-64'>
-              <h1 className='text-5xl pb-5 text-white'>
+          <div className='flex flex-col lg:grid lg:grid-cols-10'>
+            <div className='text-center lg:text-left max-w-xl mx-auto lg:col-start-1 lg:col-span-4 text-white xl:my-64 lg:mt-48 mt-20'>
+              <h1 className='lg:text-5xl md:text-4xl text-3xl pb-5 text-white'>
                 Hello, I'm <span className='text-violet-500'>Tanex</span>.
               </h1>
-              <p className='pb-10 text-lg'>
+              <p className='pb-10 lg:text-lg md:text-base text-sm'>
                 A self taught Web Developer and still learning. I like to create
                 and build new design and features to hone my skills because I
-                have the passion to do so.
+                have a growing enthusiasm to be better.
               </p>
 
               <Link
                 to='/portfolio'
-                className='py-3 px-8 border border-violet-500 text-white text-lg rounded hover:text-white font-semibold focus:outline-none hover:bg-violet-500 transition-all duration-500 ease-in-out'
+                className='lg:py-3 lg:px-8 py-2 px-6 border border-violet-500 text-white md:text-lg text-sm rounded hover:text-white font-semibold focus:outline-none hover:bg-violet-500 transition-all duration-500 ease-in-out'
               >
                 My Portfolio
               </Link>
             </div>
-            <div className='col-start-5 col-span-6'>
-              <img src={vectorImg} alt='img' className='-mt-10' />
+            <div className='lg:col-start-5 lg:col-span-6'>
+              <img
+                src={vectorImg}
+                alt='img'
+                className='lg:w-full w-5/6 mx-auto xl:-mt-10'
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className='bg-gray-700 px-2 pt-10'>
+      <div className='bg-gray-700 px-2 pt-10 -mt-0.5'>
         <div className='container mx-auto'>
-          <h1 className='max-w-lg mx-auto tracking-wide font-semibold text-white text-center border-t-2 border-violet-400 pt-4'>
+          <h1 className='md:max-w-lg xs:max-w-sm max-w-xs mx-auto tracking-wide font-semibold text-white md:text-base text-sm text-center border-t-2 border-violet-400 pt-4'>
             My recent works
           </h1>
-          <p className='text-center text-4xl text-violet-500 mb-20 pt-1 uppercase tracking-wider font-semibold'>
+          <p className='text-center md:text-4xl text-3xl text-violet-500 md:mb-16 mb-10 pt-1 uppercase tracking-wider font-semibold'>
             Portfolio
           </p>
           <Cards projectData={splicingData()} />
         </div>
       </div>
 
-      <div className='bg-gray-700 px-2 pb-10'>
+      <div className='bg-gray-700 px-2 pb-10 -mt-0.5'>
         <div className='container mx-auto pt-10'>
           <div className='w-full text-center'>
             <Link
               to='/portfolio'
               onClick={goToTop}
-              className='py-2 px-6 text-lg border border-violet-500 rounded text-white hover:text-white hover:bg-violet-500 transition-all duration-500 ease-in-out uppercase'
+              className='py-2 px-6 md:text-lg border border-violet-500 rounded text-white hover:text-white hover:bg-violet-500 transition-all duration-500 ease-in-out uppercase'
             >
               view all projects
             </Link>

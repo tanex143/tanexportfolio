@@ -9,16 +9,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
   return (
-    <div className='bg-gray-700 py-20'>
+    <div className='bg-gray-700 py-20 -mt-0.5 px-3 md:px-20'>
       <div className='container mx-auto'>
-        <h1 className='pt-5 border-t-2 font-semibold border-violet-400 text-white max-w-lg mx-auto text-center tracking-wide'>
+        <h1 className='pt-5 border-t-2 font-semibold border-violet-400 text-white md:text-base text-sm md:max-w-lg xs:max-w-sm max-w-xs mx-auto text-center tracking-wide'>
           Get in touch
         </h1>
-        <p className='uppercase text-center text-4xl font-semibold text-violet-500 tracking-wider'>
+        <p className='uppercase text-center md:text-4xl text-3xl font-semibold text-violet-500 tracking-wider'>
           Contact Me
         </p>
 
-        <div className='grid grid-cols-2 gap-5'>
+        <div className='lg:grid lg:grid-cols-2 flex flex-col gap-5'>
           <div className='pt-16 text-white'>
             <div className='flex gap-4'>
               <FontAwesomeIcon icon={faUserAlt} className='text-2xl my-auto' />
@@ -66,6 +66,8 @@ const Contact = () => {
                 <p className='text-gray-300'>Facebook</p>
                 <a
                   href='https://www.facebook.com/reynaldojrtan'
+                  target='_blank'
+                  rel='noreferrer'
                   className='text-violet-400 text-lg hover:text-lightblue-500'
                 >
                   Tanex Junior
@@ -81,6 +83,8 @@ const Contact = () => {
                 <p className='text-gray-300'>LinkedIn</p>
                 <a
                   href='https://www.linkedin.com/in/reynaldo-tan-jr-9ab103166/'
+                  target='_blank'
+                  rel='noreferrer'
                   className='text-violet-400 text-lg hover:text-lightblue-500'
                 >
                   Reynaldo Tan Jr.
@@ -88,13 +92,13 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className='mt-12 py-8 px-10 rounded text-white bg-gray-600 border border-violet-400'>
+          <div className='mt-12 py-8 sm:px-10 px-3 rounded text-white bg-gray-600 border border-violet-400'>
             <h1 className='text-2xl pb-5 text-white'>
               Message <span className='text-violet-500'>Me</span>
             </h1>
             <form method='post' name='contact' data-netlify='true'>
               <input type='hidden' name='form-name' value='contact' />
-              <div className='grid grid-cols-2 gap-4'>
+              <div className='grid md:grid-cols-2 grid-cols-1 gap-4'>
                 <input
                   type='text'
                   name='name'

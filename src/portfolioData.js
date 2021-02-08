@@ -25,7 +25,7 @@ export const portfolioData = [
     id: 5,
     project_name: 'TMDb Movies',
     description:
-      'A dynamic movies with a glassmorphism design. I fetch all the movies data in TMDb API website using useEffect Hook of React JS. It shows what are the trending movies, upcoming movies and now playing in cinema movies. Each movie shows the details of the movie. I use framer motion for the animation.',
+      'A dynamic movies with a glassmorphism design. I fetch all the movies data in TMDb API website using useEffect Hook of React JS and to expose using API. It shows what are the trending movies, upcoming movies and now playing in cinema movies. Each movie shows the details of the movie. It is also responsive.sss',
     source: 'https://github.com/tanex143/tmdb-movies',
     builtwith: [
       { name: 'React JS', source: `https://reactjs.org/` },
