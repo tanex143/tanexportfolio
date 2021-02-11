@@ -30,7 +30,7 @@ const Services = () => {
                 variants={zoomIn}
                 initial='hidden'
                 animate={controls}
-                className='bg-gray-700 rounded text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
+                className='bg-gray-700 rounded h-full text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
               >
                 <FontAwesomeIcon
                   icon={faMobileAlt}
@@ -51,7 +51,7 @@ const Services = () => {
                 variants={zoomIn}
                 initial='hidden'
                 animate={controls2}
-                className='bg-gray-700 rounded text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
+                className='bg-gray-700 rounded h-full text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
               >
                 <FontAwesomeIcon
                   icon={faLaptopCode}
@@ -72,7 +72,7 @@ const Services = () => {
                 variants={zoomIn}
                 initial='hidden'
                 animate={controls3}
-                className='bg-gray-700 rounded text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
+                className='bg-gray-700 rounded h-full text-white text-center py-10 px-5 border border-violet-400 transition-all duration-500 ease-out'
               >
                 <FontAwesomeIcon
                   icon={faPalette}

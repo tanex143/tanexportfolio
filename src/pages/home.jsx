@@ -31,9 +31,9 @@ const Home = () => {
                 Hello, I'm <span className='text-violet-500'>Tanex</span>.
               </h1>
               <p className='pb-10 lg:text-lg md:text-base text-sm'>
-                A self taught Web Developer and still learning. I like to create
-                and build new design and features to hone my skills because I
-                have a growing enthusiasm to be better.
+                A self taught Front-end Developer and still learning. I like to
+                create and build new design and features to hone my skills
+                because I have a growing enthusiasm to be better.
               </p>
               <motion.div
                 variants={delayFade}

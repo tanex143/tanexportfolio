@@ -1,4 +1,5 @@
 import me from '../images/me.jpg';
+import cv from '../images/tanex_cv.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBootstrap,
@@ -36,7 +37,7 @@ const AboutMe = () => {
                 Reynaldo D. Tan Jr.
               </h1>
               <h1 className='text-white sm:text-2xl text-xl pb-4'>
-                A Web Developer.
+                A Front-end Developer.
               </h1>
               <h1 className='text-white sm:text-lg'>
                 I love to work hard and put best of my effort into things that I
@@ -47,24 +48,46 @@ const AboutMe = () => {
           </div>
 
           <div className='flex gap-10 justify-center'>
-            <FontAwesomeIcon
-              icon={faFacebookSquare}
-              className='text-3xl text-white cursor-pointer hover:text-violet-400'
-            />
-            <FontAwesomeIcon
-              icon={faGithubSquare}
-              className='text-3xl text-white cursor-pointer hover:text-violet-400'
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className='text-3xl text-white cursor-pointer hover:text-violet-400'
-            />
+            <a
+              href='https://www.facebook.com/reynaldojrtan'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon
+                icon={faFacebookSquare}
+                className='text-3xl text-white cursor-pointer hover:text-violet-400'
+              />
+            </a>
+            <a
+              href='https://github.com/tanex143'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                className='text-3xl text-white cursor-pointer hover:text-violet-400'
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/reynaldo-tan-jr-9ab103166/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className='text-3xl text-white cursor-pointer hover:text-violet-400'
+              />
+            </a>
           </div>
 
           <div className='pt-5 text-center'>
-            <button className='py-3 px-6 rounded bg-violet-500 text-white hover:bg-violet-600'>
+            <a
+              href={cv}
+              className='py-3 px-6 rounded bg-violet-500 text-white hover:bg-violet-600 cursor-pointer'
+              download='Tanex_CV'
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
 
@@ -86,7 +109,7 @@ const AboutMe = () => {
                     icon={faHtml5}
                     className='md:text-4xl text-2xl text-orange-500 '
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     html
                   </p>
                 </div>
@@ -95,7 +118,7 @@ const AboutMe = () => {
                     icon={faCss3}
                     className='md:text-4xl text-2xl text-blue-500'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     css
                   </p>
                 </div>
@@ -104,7 +127,7 @@ const AboutMe = () => {
                     icon={faJs}
                     className='md:text-4xl text-2xl text-yellow-400'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     javascript
                   </p>
                 </div>
@@ -113,7 +136,7 @@ const AboutMe = () => {
                     icon={faBootstrap}
                     className='md:text-4xl text-2xl text-violet-500'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     Bootstrap
                   </p>
                 </div>
@@ -122,7 +145,7 @@ const AboutMe = () => {
                     icon={faReact}
                     className='md:text-4xl text-2xl text-lightblue-500'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     React JS
                   </p>
                 </div>
@@ -131,7 +154,7 @@ const AboutMe = () => {
                     icon={faGithub}
                     className='md:text-4xl text-2xl text-gray-900'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     Github
                   </p>
                 </div>
@@ -141,7 +164,7 @@ const AboutMe = () => {
                     icon={faGitAlt}
                     className='md:text-4xl text-2xl text-orange-600'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg'>
                     Git
                   </p>
                 </div>
@@ -152,7 +175,7 @@ const AboutMe = () => {
                     alt='icon'
                     className='md:h-8 lg:h-9 h-6 my-auto'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg my-auto'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg my-auto'>
                     Ant Design
                   </p>
                 </div>
@@ -163,7 +186,7 @@ const AboutMe = () => {
                     alt='icon'
                     className='md:h-8 lg:h-9 h-6'
                   />
-                  <p className='uppercase font-semibold tracking-wide md:text-2xl text-lg my-auto'>
+                  <p className='uppercase font-semibold tracking-wide md:text-2xl xs:text-lg my-auto'>
                     Tailwind CSS
                   </p>
                 </div>
